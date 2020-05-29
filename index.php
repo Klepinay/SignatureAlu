@@ -17,7 +17,20 @@
 				<select id="commercial" name="commercial" required>
 					<option value="">--Choisissez un commercial--</option>
 				   <?php
-					   $rows = file("commercial.txt", FILE_SKIP_EMPTY_LINES);
+					   $rows = file("txt/commercial.txt", FILE_SKIP_EMPTY_LINES);
+					   foreach($rows as $value){
+					?>
+					   <option value="<?php echo $value; ?>"><?php echo $value; ?></option>
+					<?php
+					}                                     
+				   ?>                             
+				</select> <br/> <br />	
+				
+				<label><b>Technicien</b></label>
+				<select id="technicien" name="technicien" required>
+					<option value="">--Choisissez un technicien--</option>
+				   <?php
+					   $rows = file("txt/technicien.txt", FILE_SKIP_EMPTY_LINES);
 					   foreach($rows as $value){
 					?>
 					   <option value="<?php echo $value; ?>"><?php echo $value; ?></option>

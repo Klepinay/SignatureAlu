@@ -54,7 +54,7 @@
 		<input type="text" name="commercial" id="commercial" value="<?php echo $_GET['commercial'] ?>">
 		
 		<label for="technicien">Technicien : </label>
-		<input type="text" name="technicien" id="technicien"><br />
+		<input type="text" name="technicien" id="technicien" value="<?php echo $_GET['technicien'] ?>"><br />
 		
 		<label for="Nbrsmenuiserie" id="labelmenuiserie">Nbrs de Menuiserie : </label>
 		<input type="number" name="Nbrsmenuiserie" id="Nbrsmenuiserie">
@@ -110,11 +110,12 @@
 		<p align="center"><input type="submit" value="Suivant" ></p>
 	<?php 
 		$commercial = $_GET['commercial'];
+		$technicien = $_GET['technicien'];
 		$client = $_GET['client'];
 		$ral = $_GET['ral'];
 		$date = $_GET['date'];
 	?>
-		<a href="nouvelle_prise_de_cote.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>"><input type="button" value="Nouvelle"></a>		
+		<a href="nouvelle_prise_de_cote.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><input type="button" value="Nouvelle"></a>		
 	</div>
 	</form>
 </footer>
