@@ -1,55 +1,208 @@
-* {
-	margin:0;
-	padding:0;
-}
-
 body {
-	font-family: Calibri;
+	margin: 0px;
+	padding: 0px;
 }
 
-
-.rectangle{
-    margin:10px;
-    width:250px;
-	border: 1px #000000 solid;
-    height:50px;
-    text-align:center;
-	float: left;
+#logo {
+	margin-left: 8%;
 }
-.rectangle2{
-	background: #CCCCCC;
-    margin:10px;
-    width:250px;
-    height:50px;
-    text-align:center;
-	float: left;
+#container{
+	align: center;
+	float:left;
+	width:40%;
 }
-.rectangle3 {
-	margin:10px;
-    width:250px;
-	border: 1px #000000 solid;
-    height:50px;
-    text-align:center;
-	float: left;
+#contact{
+	border: solid 2px black;
+	border-radius: 40px;
+	text-align: center;
+	font-size: 14px;
+	margin-left: 5%;
 }
 
-.rectangle4 {
-    width:40px;
-	border: 1px #000000 solid;
-    height:20px;
-    text-align:center;
-	float: left;
+#fiche_de_chantier{
+	border: 2px solid black;
+	border-radius: 70px;
+	float: right;
+	width: 55%;
+	margin-top: 50px;
+	margin-right: 50px;
 }
 
-.canvas {
-	border: 1px solid #000000;
-	float: left;
-	width: 170px;
-	height: 100px;
-	margin: 5px;
+#titlefiche{
+	width: 70%;
+	text-align: center;
+	margin-left: 15%;
+	border-radius: 12px;
+	background-color: red;
+	color: white;
+	font-family: Arial;
 }
 
-input:checked + label {
-  font-size: 20px;
-  font-weight: bold;
+input[for=numero]{
+	float: right;
+	margin-right: 15%;
+	margin-bottom: 5%;
+}
+#labelnumero{
+	margin-left: 54%;	
+}
+
+#Nchantier {
+	float: right;
+	margin-right: 15.7%;
+	margin-top: 5px;
+}
+#labelNchantier{
+	margin-left: 10%;
+}
+
+#labeldate {
+	margin-left:5%;
+}
+#labelclient{
+	margin-left:5%;	
+}
+#client{
+	margin-top: 5px;
+}
+#labeladresse{
+	margin-left: 5%;
+	vertical-align: top;
+}
+#adresse{
+	margin-top: 5px;
+	width: 390px;
+	height: 50px;
+}
+#labeltel{
+	margin-left:5%;	
+}
+#labelcommercial {
+	margin-left: 5%;
+}
+#commercial {
+	margin-top: 5px;
+}
+#labelmenuiserie {
+	margin-left: 5%;
+}
+#Nbrsmenuiserie{
+	margin-top:5px;
+	margin-bottom: 25px;
+}
+
+#titlerenseignement_divers{
+	width: 30%;
+	text-align: center;
+	margin-left: 35%;
+	border-radius: 12px;
+	background-color: red;
+	color: white;
+	font-family: Arial;
+}
+#Renseignement_divers{
+	border: 2px solid black;
+	border-radius: 70px;
+	float: left;
+	width: 92%;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+#labellinteau{
+	margin-left: 5%;
+}
+#labelsol {
+	margin-left:4.8%;
+}
+#sol{
+	margin-top: 5px;
+}
+#titlelectricite{
+	width: 95%;
+	text-align: center;
+	border-radius: 8px;
+	background-color: red;
+	color: white;
+	font-family: Arial;
+}
+#Electricite {
+	border: 2px solid black;
+	border-radius: 12px;
+	float: left;
+	width: 20%;
+	margin-top: 50px;
+	margin-right: 25px;
+	margin-left: 50px;
+	margin-bottom: 50px;	
+}
+#elecoui {
+	margin-bottom: 25px;
+}
+
+#labelelecoui {
+	margin-right: 50px;
+}
+#title_enduit_interieur{
+	width: 95%;
+	text-align: center;
+	border-radius: 8px;
+	background-color: red;
+	color: white;
+	font-family: Arial;
+	margin-left: -20px;
+}
+#enduit_interieur {
+	border: 2px solid black;
+	border-radius: 12px;
+	float: left;
+	width: 33%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-right: 10px;	
+	padding-left: 25px;
+	padding-bottom: 25px;
+}
+#title_enduit_exterieur{
+	width: 95%;
+	text-align: center;
+	border-radius: 8px;
+	background-color: red;
+	color: white;
+	font-family: Arial;
+	margin-left: 10px;
+	
+}
+#enduit_exterieur {
+	border: 2px solid black;
+	border-radius: 12px;
+	float: left;
+	width: 33%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-left: 25px;
+	padding-bottom: 25px;
+}
+#fait {
+	margin-left: 50px;	
+}
+#faire {
+	margin-left: 50px;
+}
+#placo_fait {
+	margin-left: 90px;	
+}
+#placo_faire {
+	margin-left: 50px;
+}
+#proj_fait {
+	margin-left: 50px;	
+}
+#proj_faire {
+	margin-left: 50px;
+}
+#bardage_fait {
+	margin-left: 66px;	
+}
+#bardage_faire {
+	margin-left: 50px;
 }
