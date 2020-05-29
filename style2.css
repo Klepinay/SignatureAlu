@@ -1,0 +1,103 @@
+
+
+.table{
+	border-collapse: collapse;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Avenir, sans serif;
+}
+
+#table1 {
+	margin-top: 15px;
+	font-family: Arial;
+	font-size: 14px;
+	display: none;
+}
+
+.button {
+	height: 50px;
+	width: 100px;
+	font-family: Arial;
+	font-size: 14px;
+	margin: 10px;
+}
+
+#table2 {
+	margin-top: 15px;
+	font-family: Arial;
+	font-size: 14px;
+	display: none;
+}
+
+#table3 {
+	margin-top: 15px;
+	font-family: Arial;
+	font-size: 14px;
+	display: none;
+}
+
+#table3-1 {
+	margin-top: 15px;
+	font-family: Arial;
+	font-size: 14px;
+	display: none;
+}
+
+#table3-2 {
+	margin-top: 15px;
+	font-family: Arial;
+	font-size: 14px;
+	display: none;
+}
+
+#table3-3 {
+	margin-top: 15px;
+	font-family: Arial;
+	font-size: 14px;
+	display: none;
+}
+
+#table4 {
+	margin-top: 15px;
+	font-family: Arial;
+	font-size: 14px;
+	display: none;
+}
+
+#table5 {
+	margin-top: 15px;
+	font-family: Arial;
+	font-size: 14px;
+	display: none;
+}
+
+#table6 {
+	margin-top: 15px;
+	font-family: Arial;
+	font-size: 14px;
+	display: none;
+}
+
+#table7 {
+	margin-top: 15px;
+	font-family: Arial;
+	font-size: 14px;
+	display: none;
+}
+
+#table8 {
+	margin-top: 15px;
+	font-family: Arial;
+	font-size: 14px;
+	display: none;
+}
+
+#table9 {
+	margin-top: 15px;
+	font-family: Arial;
+	font-size: 14px;
+	display: none;
+}

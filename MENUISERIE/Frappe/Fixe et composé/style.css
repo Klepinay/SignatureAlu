@@ -1,0 +1,47 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family: Calibri;
+}
+
+
+.rectangle{
+    margin:10px;
+    width:250px;
+	border: 1px #000000 solid;
+    height:50px;
+    text-align:center;
+	float: left;
+}
+.rectangle2{
+	background: #CCCCCC;
+    margin:10px;
+    width:250px;
+    height:50px;
+    text-align:center;
+	float: left;
+}
+.rectangle3 {
+	margin:10px;
+    width:250px;
+	border: 1px #000000 solid;
+    height:50px;
+    text-align:center;
+	float: left;
+}
+
+.canvas {
+	border: 1px solid #000000;
+	float: left;
+	width: 170px;
+	height: 100px;
+	margin: 5px;
+}
+
+input:checked + label {
+  font-size: 20px;
+  font-weight: bold;
+}

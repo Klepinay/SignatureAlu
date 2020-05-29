@@ -107,7 +107,14 @@
 <footer>
 		
 	<div class="noImpr">
-		<p align="center"><input type="submit" value="Suivant" ></p>	
+		<p align="center"><input type="submit" value="Suivant" ></p>
+	<?php 
+		$commercial = $_GET['commercial'];
+		$client = $_GET['client'];
+		$ral = $_GET['ral'];
+		$date = $_GET['date'];
+	?>
+		<a href="nouvelle_prise_de_cote.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>"><input type="button" value="Nouvelle"></a>		
 	</div>
 	</form>
 </footer>
