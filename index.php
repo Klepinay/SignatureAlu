@@ -40,7 +40,7 @@
 				</select> <br/> <br />
 			   
 				<label><b>Numero de dossier</b></label><br/>
-				<input type="text" name="numero" id="name" style="width:45%" required> - <input type="text" name="numero2" id="name" style="width:45%" required><br />
+				<input type="text" name="numero" id="numero" style="width:45%" required> - <input type="text" name="numero2" id="name" style="width:45%" required><br />
 				
 				<label><b>Nom du client</b></label>
 				<input type="text" name="client" id="client" required>

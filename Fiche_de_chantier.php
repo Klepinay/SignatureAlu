@@ -32,35 +32,35 @@
 			<h2>Fiche de chantier</h2>
 		</div>
 		
-		<label for="numero" id="labelnumero">N° : </label>
-		<input type="number" id="numero" name="numero" ><br />
+		<label for="numero" id="labelnumero"><b>N° : </b></label>
+		<?php echo $_GET['numero'] ?><br />
 		
-		<label for="date" id="labeldate">Date : </label>
-		<input type="date" id="date" name="date">
+		<label for="date" id="labeldate"><b>Date : </b></label>
+		<?php echo $_GET['date']; ?>
 		
-		<label for="Nchantier" id="labelNchantier">N° de chantier : </label>
-		<input type="number" name="Nchantier" id="Nchantier">	
+		<label for="Nchantier" id="labelNchantier"><b>N° de chantier : </b></label>
+		<input type="number" name="Nchantier" id="Nchantier"><br />	
 		
-		<label for="client" id="labelclient">Client : </label>
-		<input type="text" name="client" id="client" value="<?php echo $_GET['client'] ?>"><br />
+		<label for="client" id="labelclient"><b>Client : </b></label>
+		<?php echo $_GET['client'] ?><br />
 		
-		<label for="adresse" id="labeladresse">Adresse du chantier : </label>
+		<label for="adresse" id="labeladresse"><b>Adresse du chantier : </b></label>
 		<textarea  name="adresse" id="adresse"></textarea><br />
 		
-		<label for="tel" id="labeltel">Tel : </label>
+		<label for="tel" id="labeltel"><b>Tel : </b></label>
 		<input type="tel" name="tel" id="tel"> <br />
 		
-		<label for="commercial" id="labelcommercial">Commercial : </label>
-		<input type="text" name="commercial" id="commercial" value="<?php echo $_GET['commercial'] ?>">
+		<label for="commercial" id="labelcommercial"><b>Commercial : </b></label>
+		<?php echo $_GET['commercial'] ?>
 		
-		<label for="technicien">Technicien : </label>
-		<input type="text" name="technicien" id="technicien" value="<?php echo $_GET['technicien'] ?>"><br />
+		<label for="technicien" style="margin-left: 50px"><b>Technicien : </b></label>
+		<?php echo $_GET['technicien'] ?><br />
 		
-		<label for="Nbrsmenuiserie" id="labelmenuiserie">Nbrs de Menuiserie : </label>
+		<label for="Nbrsmenuiserie" id="labelmenuiserie"><b>Nbrs de Menuiserie : </b></label>
 		<input type="number" name="Nbrsmenuiserie" id="Nbrsmenuiserie">
 		
-		<label for="ral">R A L : </label>
-		<input type="couleur" name="ral" id="ral" value="<?php echo $_GET['ral'] ?>"><br/>
+		<label for="ral" style="margin-left: 50px"><b>R A L : </b></label>
+		<?php echo $_GET['ral'] ?><br/>
 	</div>
 	
 	<div id="Renseignement_divers">
@@ -98,10 +98,62 @@
 			Trad./Proj.<input type="checkbox" name="proj_fait" id="proj_fait"><label for="proj_fait" >Fait</label><input type="checkbox" name="proj_faire" id="proj_faire"><label for="proj_faire">A faire</label><br />
 			Bardage<input type="checkbox" name="bardage_fait" id="bardage_fait"><label for="bardage_fait" >Fait</label><input type="checkbox" name="bardage_faire" id="bardage_faire"><label for="bardage_faire">A faire</label>
 		</div>
+		
+		<div id="depose">
+			<div id="title_depose">
+				<h2>Dépose</h2>
+			</div>
+			
+			<input type="checkbox" name="oui_depose" id="oui_depose"><label for="oui_depose">Oui</label>
+			<input type="checkbox" name="non_depose" id="non_depose"><label for="non_depose">Non</label><br />
+			<input type="checkbox" name="check_client" id="check_client"><label for="check_client">Client</label>
+			<input type="checkbox" name="install_alu" id="install_alu"><label for="install_alu">Install Alu</label><br />
 		</div>
-	
+		
+		<div id="etancheite">
+			<div id="title_etancheite">
+				<h2>Etanchéité (Entoilage) Tableau</h2>
+			</div>
+			
+			<input type="checkbox" name="etancheite_fait" id="etancheite_fait"><label for="etancheite_fait" >Fait</label><input type="checkbox" name="etancheite_faire" id="etancheite_faire"><label for="etancheite_faire">A faire</label>
+		</div>
 	</div>
-
+	
+	<div id="renseigner" style="padding-left:50px;">
+		<div id="title_renseigner">
+			<h2>A Renseigner par le client</h2>
+		</div>
+				<p>
+					<font face="Arial" style="background:red; border-radius:25px; color:white"><b>&nbsp;1 </b></font>&nbsp; Présence inpérative du trait de niveau fourni par le Gros Oeuvre, ainsi que le renseignement pour la hauteur sol fini..................................<input type="checkbox">
+				</p>
+				<p>
+					<font face="Arial" style="background:red; border-radius:25px; color:white"><b>&nbsp;2 </b></font>&nbsp; Etanchéité des tableaux effectuer inpérativement avant la pose des menuiseries..................................<input type="checkbox">
+				</p>
+				<p>
+					<font face="Arial" style="background:red; border-radius:25px; color:white"><b>&nbsp;3 </b></font>&nbsp; Suite à la prise de mesure aucune modification (changement sens d'ouvertures, trait de niveau, dimensions...) ne pourra être effectué..................................<input type="checkbox">
+				</p>
+				<p>
+					<font face="Arial" style="background:red; border-radius:25px; color:white"><b>&nbsp;4 </b></font>&nbsp; Au-delà d'un délai de un mois après la date prévisionnelle de pose, le client s'engage à régler le solde de la fourniture (Hors Pose)..................................<input type="checkbox">
+				</p>
+				<p>
+					<font face="Arial" style="background:red; border-radius:25px; color:white"><b>&nbsp;5 </b></font>&nbsp; Le client doit être présent lors de la récepetion de pose des menuiseries..................................<input type="checkbox">
+				</p>
+				<p>
+					<font face="Arial" style="background:red; border-radius:25px; color:white"><b>&nbsp;6 </b></font>&nbsp; Le solde du chantier vous seras demandé à la réception avec le poseur. Merci de préciser le moyent de paiement
+				</p>
+				<p align="center">
+					<input type="checkbox">Virement bancaire (Délai Bancaire)<input type="checkbox">Chèque<input type="checkbox">Espèces
+				</p>
+	</div>
+	<div width="100%">
+		<div id="signature_client">
+			<p align="center">Signature client</p>
+		</div>
+		
+		<div id="signature_technicien">
+			<p align="center">Signature Technicien</p>
+		</div>
+	<div>
 	
 </body>
 <footer>

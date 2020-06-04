@@ -48,7 +48,6 @@ input[for=numero]{
 }
 
 #Nchantier {
-	float: right;
 	margin-right: 15.7%;
 	margin-top: 5px;
 }
@@ -133,7 +132,8 @@ input[for=numero]{
 	margin-top: 50px;
 	margin-right: 25px;
 	margin-left: 50px;
-	margin-bottom: 50px;	
+	margin-bottom: 50px;
+	padding-bottom: 25px;
 }
 #elecoui {
 	margin-bottom: 25px;
@@ -149,7 +149,6 @@ input[for=numero]{
 	background-color: red;
 	color: white;
 	font-family: Arial;
-	margin-left: -20px;
 }
 #enduit_interieur {
 	border: 2px solid black;
@@ -157,7 +156,6 @@ input[for=numero]{
 	float: left;
 	width: 33%;
 	margin-top: 50px;
-	margin-bottom: 50px;
 	margin-right: 10px;	
 	padding-left: 25px;
 	padding-bottom: 25px;
@@ -169,7 +167,6 @@ input[for=numero]{
 	background-color: red;
 	color: white;
 	font-family: Arial;
-	margin-left: 10px;
 	
 }
 #enduit_exterieur {
@@ -178,7 +175,7 @@ input[for=numero]{
 	float: left;
 	width: 33%;
 	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-bottom: 25px;
 	padding-left: 25px;
 	padding-bottom: 25px;
 }
@@ -205,4 +202,97 @@ input[for=numero]{
 }
 #bardage_faire {
 	margin-left: 50px;
+}
+#title_depose{
+	width: 95%;
+	text-align: center;
+	border-radius: 8px;
+	background-color: red;
+	color: white;
+	font-family: Arial;
+	margin-left: 5px;
+	
+}
+#depose {
+	border: 2px solid black;
+	border-radius: 12px;
+	float: left;
+	width: 20%;
+	margin-bottom: 10px;
+	padding-bottom: 25px;
+	margin-left: -150px;
+}
+#oui_depose {
+	margin-left: 50px;
+}
+#non_depose {
+	margin-left: 50px;
+}
+#check_client {
+	margin-left: 50px;
+}
+#install_alu {
+	margin-left: 35px;
+}
+#title_etancheite{
+	width: 95%;
+	text-align: center;
+	border-radius: 8px;
+	background-color: red;
+	color: white;
+	font-family: Arial;
+	margin-left: 10px;
+	
+}
+#etancheite {
+	border: 2px solid black;
+	border-radius: 12px;
+	float: left;
+	width: 40%;
+	margin-bottom: 5px;
+	margin-left: 100px;
+	padding-bottom: 20px;
+}
+#etancheite_fait {
+	margin-top: 25px;
+	margin-left: 80px;
+}
+#etancheite_faire {
+	margin-left: 180px;
+}
+#title_renseigner{
+	width: 30%;
+	text-align: center;
+	margin-left: 35%;
+	border-radius: 12px;
+	background-color: red;
+	color: white;
+	font-family: Arial;
+	
+}
+#renseigner {
+	border: 2px solid black;
+	border-radius: 70px;
+	float: left;
+	width: 88%;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+#signature_client {
+	border: 2px solid black;
+	border-radius: 45px;
+	float: left;
+	width: 25%;
+	margin-top: 50px;
+	margin-left: 50px;
+	height: 150px;
+}
+#signature_technicien {
+	border: 2px solid black;
+	border-radius: 45px;
+	float: right;
+	width: 25%;
+	margin-top: 50px;
+	margin-right: 50px;
+	height: 150px;
 }

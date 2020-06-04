@@ -101,3 +101,10 @@
 	font-size: 14px;
 	display: none;
 }
+#info {
+	float: right;
+	width: 50%;
+}
+#logo{
+	float:left;
+}

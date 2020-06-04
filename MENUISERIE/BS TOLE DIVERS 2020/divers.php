@@ -69,8 +69,8 @@
 					</td>
 				</tr>
 			</table>
-	
-							<div class="cadre" id="canvasDiv" style="border: 2px solid black;" width="100%"></div>  
+
+							<div class="cadre" id="canvasDiv" style="border: 2px solid black;width:800px;height:800px;margin: 0 auto"></div>  
 
 
 				
@@ -78,25 +78,25 @@
 		<table border="0" width="100%" style="border-collapse: collapse; margin-top: 100px;">
 			<tr align="center">
 				<td style="border-top: 2px #000000 solid;"></td>
-				<td style="border-top: 2px #000000 solid;" >
+				<td style="border-top: 2px #000000 solid;padding-top:10px;">
 					<p><label>Hauteur Point de Niveau / Linteau : </label><input type="number" >
 				</td>
 				<td style="border-top: 2px #000000 solid;"></td>
-				<td style="border-top: 2px #000000 solid;"></td>
-				<td style="border-top: 2px #000000 solid;">						
+				<td style="border-top: 2px #000000 solid; "></td>
+				<td style="border-top: 2px #000000 solid;padding-top:10px;">						
 					<p><label>Hauteur Point de Niveau / Sol Fini : </label><input type="number" >
 				</td>
 				<td style="border-top: 2px #000000 solid;"></td>
 			</tr>
 			<tr>
 				<td align="right">
-					<span>&#8593;<br /><input type="number" style="width:25px;  margin-bottom:10px; margin-top: 10px"> Cm <br />&#8595;</span>
+					<span>&#8593;<br /><input type="number" style="width:50px;  margin-bottom:10px; margin-top: 10px"> Cm <br />&#8595;</span>
 				</td>
 				<td>
 					<div class="rectangle3" >
 						<p style="font-size:24px"><b>Cote Béton</b></p>
 					</div><br /><br /><br /><br />
-					<p style="margin-left:80px">&#8592; <input type="number" style="width:25px; margin-bottom:5px; margin-left:15px; margin-right:15px"> Cm &#8594;</p>
+					<p style="margin-left:80px">&#8592; <input type="number" style="width:50px; margin-bottom:5px; margin-left:15px; margin-right:15px"> Cm &#8594;</p>
 				</td>	
 				<td colspan=3>
 					<label><b>Observation: <textarea name="observations" rows=4 cols=40></textarea></b></label>
@@ -152,8 +152,8 @@ pinceau.stroke();
             this.paint;
             this.canvasDiv = document.getElementById('canvasDiv');
             this.canvas = document.createElement('canvas');
-            this.canvas.setAttribute('width', "1500");
-            this.canvas.setAttribute('height', "1000");
+            this.canvas.setAttribute('width', "800");
+            this.canvas.setAttribute('height', "800");
             this.canvas.setAttribute('id', 'canvas');
             this.canvasDiv.appendChild(this.canvas);
             if(typeof G_vmlCanvasManager !== 'undefined') {
