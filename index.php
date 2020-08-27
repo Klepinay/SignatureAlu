@@ -1,57 +1,33 @@
-<!doctype html>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<!DOCTYPE HTML>
 <html>
+<head>
+	<title>Signature Alu - Accueil</title>
+   <!--Made with love by Mutiullah Samim -->
+   
+	<!--Bootsrap 4 CDN-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!--Fontawesome CDN-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<link href="style.css" rel="stylesheet">
-		<title>Nouvelle Prise de cote</title>
-	</head>
-	
+	<!--Custom styles-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 	<body>
-		<div id="container">
-			<form method="POST" action="mkdir.php" align="center">
-				<h1> Nouvelle Prise de cote </h1>
+	<div class="container">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card">
+			<div class="card-header" style="text-align:center">
+				<image src="images/LOGO-SIGNATURE-ALU-OK-8X4.png" style="width: 100%; margin-bottom: 12px">
+			</div>
+			<div class="card-body">
+				<a href="login.php" ><button class="btn login_btn" style="width: 100%; height: 60px;">Administrateur</button></a><br />
+				<a href="Home.php"><button class="btn login_btn" style="width: 100%; margin-top: 25px; height: 60px;">Nouvelle Prise de cote</button></a>
 				
-				<label><b>Commercial</b></label>
-				<select id="commercial" name="commercial" required>
-					<option value="">--Choisissez un commercial--</option>
-				   <?php
-					   $rows = file("txt/commercial.txt", FILE_SKIP_EMPTY_LINES);
-					   foreach($rows as $value){
-					?>
-					   <option value="<?php echo $value; ?>"><?php echo $value; ?></option>
-					<?php
-					}                                     
-				   ?>                             
-				</select> <br/> <br />	
-				
-				<label><b>Technicien</b></label>
-				<select id="technicien" name="technicien" required>
-					<option value="">--Choisissez un technicien--</option>
-				   <?php
-					   $rows = file("txt/technicien.txt", FILE_SKIP_EMPTY_LINES);
-					   foreach($rows as $value){
-					?>
-					   <option value="<?php echo $value; ?>"><?php echo $value; ?></option>
-					<?php
-					}                                     
-				   ?>                             
-				</select> <br/> <br />
-			   
-				<label><b>Numero de dossier</b></label><br/>
-				<input type="text" name="numero" id="numero" style="width:45%" required> - <input type="text" name="numero2" id="name" style="width:45%" required><br />
-				
-				<label><b>Nom du client</b></label>
-				<input type="text" name="client" id="client" required>
-				
-				<label><b>RAL</b></label>
-				<input type="text" name="ral" id="ral" required>
-				
-				<label><b>Date</b></label>
-				<input type="date" name="date" id="date" required>
-				<input type="submit" id="submit" value="CREER">
-			</form>
-		</div>
+			</div>
 	</body>
 </html>

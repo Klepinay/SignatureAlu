@@ -116,7 +116,7 @@
 					<tr>
 						<td colspan=3>
 							<div style="text-align:center; font-size: 24px; margin-bottom: 20px; margin-top:20px"><span style="background:#D9D9D9;"><b><i> Coffre </i></b></span></div>
-							<p><input type="checkbox" style="width: 17px; height:17px; margin-left:200px" id="205/90"><label for="205/90"> 205/90</label></p>
+							<p><input type="checkbox" name="divun"style="width: 17px; height:17px; margin-left:200px" id="205/90"><label for="205/90"> 205/90</label></p>
 							<p><input type="checkbox" style="width: 17px; height:17px; margin-left:200px" id="250/90"><label for="250/90"> 250/90</label></p>
 							<p><input type="checkbox" style="width: 17px; height:17px; margin-left:200px" id="250/45"><label for="250/45"> 250/45</label></p>
 							<p><input type="checkbox" style="width: 17px; height:17px; margin-left:200px" id="300/45"><label for="300/45"> 300/45</label></p>
@@ -125,7 +125,7 @@
 
 						<td colspan=3 style="border-left: 2px #000000 solid;">
 							<div style="text-align:center; font-size: 24px; margin-bottom: 20px; margin-top:20px"><span style="background:#D9D9D9;"><b><i> Coffre </i></b></span></div>
-							<p><input type="checkbox" style="width: 17px; height:17px; margin-left:200px" id="205/90"><label for="205/90"> 205/90</label></p>
+							<p><input type="checkbox" name="c1" value="ok" style="width: 17px; height:17px; margin-left:200px" id="205/90"><label for="205/90"> 205/90</label></p>
 							<p><input type="checkbox" style="width: 17px; height:17px; margin-left:200px" id="250/90"><label for="250/90"> 250/90</label></p>
 							<p><input type="checkbox" style="width: 17px; height:17px; margin-left:200px" id="250/45"><label for="250/45"> 250/45</label></p>
 							<p><input type="checkbox" style="width: 17px; height:17px; margin-left:200px" id="300/45"><label for="300/45"> 300/45</label></p>
@@ -234,8 +234,8 @@
 		</table>
 	</footer>
 	<div class="noImpr">
-		<p align="center"><input type="button" value="Enregistrer" onClick="window.print()"></p>	
-		<p align="center"><button><a href="file:///C:/Prise%20de%20cote/Home.html">Nouvelle Prise de Cote</a></button></p>
+		<p align="center"><a href="VR_pdf.php">save</a></button></p>
+		<p align="center"><button><a href="/Signature/nouvelle_prise_de_cote.php?technicien=<?php echo $_GET['technicien'] ?>&numero=<?php echo $_GET['numero'] ?>&date=<?php echo $_GET['date'] ?>&Nchantier=<?php echo $_GET['Nchantier'] ?>&client=<?php echo $_GET['client'] ?>&adresse=<?php echo $_GET['adresse'] ?>&tel=<?php echo $_GET['tel'] ?>&commercial=<?php echo $_GET['commercial'] ?>&Nbrsmenuiserie=<?php echo $_GET['Nbrsmenuiserie'] ?>&ral=<?php echo $_GET['ral'] ?>">Nouvelle Prise de Cote</a></button></p>
 	</div>
 	</form>
 </html>

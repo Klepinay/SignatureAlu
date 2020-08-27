@@ -296,3 +296,10 @@ input[for=numero]{
 	margin-right: 50px;
 	height: 150px;
 }
+
+.submit {
+	float: left;
+	text-align: center;
+	width: 50%;
+	margin-left: 25%;
+}

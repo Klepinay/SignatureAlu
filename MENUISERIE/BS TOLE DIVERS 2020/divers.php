@@ -1,3 +1,15 @@
+	<?php 
+	$numero = $_GET['numero'];
+	$technicien = $_GET['technicien'];
+	$date = $_GET['date'];
+	$Nchantier = $_GET['Nchantier'];
+	$client = $_GET['client'];
+	$adresse = $_GET['adresse'];
+	$tel = $_GET['tel'];
+	$commercial = $_GET['commercial'];
+	$Nbrsmenuiserie = $_GET['Nbrsmenuiserie'];
+	$ral = $_GET['ral'];
+	?>
 <!Doctype html>
 <html>
 	<head>
@@ -13,7 +25,7 @@
 	</head>
 	
 	<body>
-		<form>
+		<form method="POST" action="divers_pdf.php?client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>">
 			<table width="100%" border="0">
 				<tr >
 					<td>
@@ -49,22 +61,22 @@
 				<tr >
 					<td>
 						<div class="rectangle2" >
-							<label><i><b>Rep<br /></b></i><input type="text" name="rep"></label>
+							<label><i><b>Rep<br /></b></i><input type="text" name="rep" id="rep"></label>
 						</div>
 					</td>
 					<td>
 						<div class="rectangle2" >
-							<label><i><b>Qté<br /></b></i><input type="text" name="qte"></label>
+							<label><i><b>Qté<br /></b></i><input type="text" name="rep1" id="rep1"></label>
 						</div>
 					</td>
 					<td>
 						<div class="rectangle2" >
-							<label><i><b>Lg<br /></b></i><input type="text" name="lg"></label>
+							<label><i><b>Lg<br /></b></i><input type="text" name="rep2" id="rep2"></label>
 						</div>
 					</td>
 					<td>
 						<div class="rectangle2" >
-							<label><i><b>Ht<br /></b></i><input type="text" name="ht"></label>
+							<label><i><b>Ht<br /></b></i><input type="text" name="rep3" id="rep3"></label>
 						</div>
 					</td>
 				</tr>
@@ -90,13 +102,13 @@
 			</tr>
 			<tr>
 				<td align="right">
-					<span>&#8593;<br /><input type="number" style="width:50px;  margin-bottom:10px; margin-top: 10px"> Cm <br />&#8595;</span>
+					<span>&#8593;<br /><input type="number" name="nb1" style="width:50px;  margin-bottom:10px; margin-top: 10px"> Cm <br />&#8595;</span>
 				</td>
 				<td>
 					<div class="rectangle3" >
 						<p style="font-size:24px"><b>Cote Béton</b></p>
 					</div><br /><br /><br /><br />
-					<p style="margin-left:80px">&#8592; <input type="number" style="width:50px; margin-bottom:5px; margin-left:15px; margin-right:15px"> Cm &#8594;</p>
+					<p style="margin-left:80px">&#8592; <input type="number" name="nb2" style="width:50px; margin-bottom:5px; margin-left:15px; margin-right:15px"> Cm &#8594;</p>
 				</td>	
 				<td colspan=3>
 					<label><b>Observation: <textarea name="observations" rows=4 cols=40></textarea></b></label>
@@ -105,8 +117,8 @@
 		</table>
 	</footer>
 	<div class="noImpr">
-		<p align="center"><input type="button" value="Enregistrer" onClick="window.print()"></p>	
-		<p align="center"><button><a href="file:///C:/Prise%20de%20cote/Home.html">Nouvelle Prise de Cote</a></button></p>
+		<p align="center"><boutton><a href="divers_pdf.php">save</a></button></p>	
+		<p align="center"><button><a href="/Signature/nouvelle_prise_de_cote.php?technicien=<?php echo $_GET['technicien'] ?>&numero=<?php echo $_GET['numero'] ?>&date=<?php echo $_GET['date'] ?>&Nchantier=<?php echo $_GET['Nchantier'] ?>&client=<?php echo $_GET['client'] ?>&adresse=<?php echo $_GET['adresse'] ?>&tel=<?php echo $_GET['tel'] ?>&commercial=<?php echo $_GET['commercial'] ?>&Nbrsmenuiserie=<?php echo $_GET['Nbrsmenuiserie'] ?>&ral=<?php echo $_GET['ral'] ?>">Nouvelle Prise de Cote</a></button></p>
 	</div>
 
 	</form>

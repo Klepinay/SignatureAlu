@@ -82,7 +82,7 @@
 						</tr>
 						<tr align="center">
 							<td>
-								<img  src="C:\Prise de cote\images\2020-02-05 10_01_43-Microsoft Excel (Échec de l’activation du produit) - G C Rampant Vitré JMD 2020..png">
+								<img  src="\Signature\images\2020-02-05 10_07_37-Microsoft Excel (Échec de l’activation du produit) - G C Rampant Vitré PS 2020.x.png">
 							</td>
 							<td align="right">
 								<div class="rectangle" >
@@ -147,12 +147,12 @@
 						<tr >
 							<td style="padding-left: 250px;"> <input type="checkbox" style="width:20px; height:20px" id="SD"><label for="SD">Sabot sur Dalle</label> </td>
 							<td style="padding-left: 100px;"><label>Qté : <input type="number" style="width:35px"></label></td>
-							<td> <input type="checkbox" style="width:20px; height:20px" id="LR"><label for="LR">Lisse RONDE</label> </td>
+							<td> <input type="checkbox" style="width:20px; height:20px" id="LR"><label for="LR">Lisse PS</label> </td>
 						</tr>
 						<tr >
 							<td style="padding-left: 250px;"> <input type="checkbox" style="width:20px; height:20px" id="SA"><label for="SA">Sabot en Applique</label> </td>
 							<td style="padding-left: 100px;"><label>Qté : <input type="number" style="width:35px"></label></td>
-							<td> <input type="checkbox" style="width:20px; height:20px" id="LP"><label for="LP">Lisse PLATE</label> </td>
+							
 						</tr>
 						<tr height="25px"></tr>
 						<tr align="center">
@@ -205,8 +205,8 @@
 		</table>
 	</footer>
 	<div class="noImpr">
-		<p align="center"><input type="button" value="Enregistrer" onClick="window.print()"></p>	
-		<p align="center"><button><a href="file:///C:/Prise%20de%20cote/Home.html">Nouvelle Prise de Cote</a></button></p>
+		<p align="center"><a href="gcdb6_pdf.php">save</a></button></p>		
+		<p align="center"><button><a href="/Signature/nouvelle_prise_de_cote.php?technicien=<?php echo $_GET['technicien'] ?>&numero=<?php echo $_GET['numero'] ?>&date=<?php echo $_GET['date'] ?>&Nchantier=<?php echo $_GET['Nchantier'] ?>&client=<?php echo $_GET['client'] ?>&adresse=<?php echo $_GET['adresse'] ?>&tel=<?php echo $_GET['tel'] ?>&commercial=<?php echo $_GET['commercial'] ?>&Nbrsmenuiserie=<?php echo $_GET['Nbrsmenuiserie'] ?>&ral=<?php echo $_GET['ral'] ?>">Nouvelle Prise de Cote</a></button></p>
 	</div>
 
 	</form>

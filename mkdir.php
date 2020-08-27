@@ -9,7 +9,7 @@
 	$date = htmlspecialchars($_POST['date']);
 	
 
-	mkdir("prise de cote/$numero-$numero2   $client", 0777);
+	mkdir("prise de cote/$numero-$numero2   $client", 777);
 	
 	$url = "Fiche_de_chantier.php?commercial=$commercial&client=$client&ral=$ral&date=$date&technicien=$technicien&numero=$numero-$numero2";
 	$url=str_replace(PHP_EOL, '', $url);

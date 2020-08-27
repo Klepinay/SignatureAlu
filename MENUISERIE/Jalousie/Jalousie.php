@@ -80,7 +80,7 @@
 					 </tr> 
 					 <tr > 
 						 <td colspan=3 > 
-							 <p style="margin-left:244px"><input type="checkbox"  style="width: 20px; height:20px" id="1division">&nbsp;<label for="1division"> 1 Division </label></p> 
+							 <p style="margin-left:244px"><input type="checkbox"  name="1division" value="checked" style="width: 20px; height:20px" id="1division">&nbsp;<label for="1division"> 1 Division </label></p>
 						 </td> 
 						 <td colspan=3 style="border-left: 2px #000000 solid;" align="center"> 
 							 <p><input type="checkbox"  style="width: 20px; height:20px" id="sans traverse">&nbsp; <label for="droite">Droite</label></p> 
@@ -351,8 +351,8 @@
 		</table>
 	</footer>
 	<div class="noImpr">
-		<p align="center"><input type="button" value="Enregistrer" onClick="window.print()"></p>	
-		<p align="center"><button><a href="file:///C:/Prise%20de%20cote/Home.html">Nouvelle Prise de Cote</a></button></p>
+		<p align="center"><a href="Jalousiepdf.php">save</a></button></p>	
+		<p align="center"><button><a href="/Signature/nouvelle_prise_de_cote.php?technicien=<?php echo $_GET['technicien'] ?>&numero=<?php echo $_GET['numero'] ?>&date=<?php echo $_GET['date'] ?>&Nchantier=<?php echo $_GET['Nchantier'] ?>&client=<?php echo $_GET['client'] ?>&adresse=<?php echo $_GET['adresse'] ?>&tel=<?php echo $_GET['tel'] ?>&commercial=<?php echo $_GET['commercial'] ?>&Nbrsmenuiserie=<?php echo $_GET['Nbrsmenuiserie'] ?>&ral=<?php echo $_GET['ral'] ?>">Nouvelle Prise de Cote</a></button></p>
 	</div>
 
 	</form>

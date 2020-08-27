@@ -1,8 +1,20 @@
+<?php 
+	$numero = $_GET['numero'];
+	$technicien = $_GET['technicien'];
+	$date = $_GET['date'];
+	$Nchantier = $_GET['Nchantier'];
+	$client = $_GET['client'];
+	$adresse = $_GET['adresse'];
+	$tel = $_GET['tel'];
+	$commercial = $_GET['commercial'];
+	$Nbrsmenuiserie = $_GET['Nbrsmenuiserie'];
+	$ral = $_GET['ral'];
+?>
 <!DOCTYPE html>
 	<html>
 
 		<head>
-			<title>Coulissant 2 Vtx</title>
+			<title id="title">Coulissant 2 Vtx</title>
 			<meta charset="utf-8">
 			<link rel="stylesheet" type="text/css" href="style.css">
 			<style media="print" type="text/css">
@@ -13,7 +25,8 @@
 		</head>
 
     <body style="font-family: Calibri;">
-        <form method="POST">
+        <form method="POST" action=Coul2_pdf.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo$ral ?>">
+								
             <table width="100%" border="0">
 								<tr >
 					<td>
@@ -74,10 +87,10 @@
 					<table width="100%" border="0" style="border-collapse: collapse ">
 						<tr>
 							<td align="center" colspan=3>
-								<input type="checkbox" id="fenetre" name="fenetre" style="width: 20px; height: 20px"> <label for="fenetre" style="font-size: 25px"><b>Fenêtre</b></label>
+								<input type="checkbox" id="modele" name="modele" style="width: 20px; height: 20px" value="fenetre"> <label for="modele" style="font-size: 25px"><b>Fenêtre</b></label>
 							</td>
 							<td align="center" colspan=3>
-								<label for="porte" style="font-size: 25px"><b>Porte</b></label> <input type="checkbox" id="porte" name="porte" style="width: 20px; height: 20px; margin-left: 10px">
+								<label for="modele" style="font-size: 25px"><b>Porte</b></label> <input value="porte" type="checkbox" id="modele" name="modele" style="width: 20px; height: 20px; margin-left: 10px">
 							</td>
 						</tr>
 						<tr height="30px">
@@ -100,10 +113,10 @@
 							<td></td>
 							<td>
 								<div style="float: left;">
-									<input type="checkbox" id="27mm" name="27mm" style="width: 17px; height: 17px;"><label for="27mm">27 mm</label>
+									<input type="checkbox" id="couvre_joint" name="couvre_joint" value="27" style="width: 17px; height: 17px;"><label for="couvre_joint">27 mm</label>
 								</div>
 								<div style="float: right;">
-									<input type="checkbox" id="droit" name="droit" style="width: 17px; height: 17px"><label for="droit">Droit</label>
+									<input type="checkbox" id="droit" name="droit" value="Droit" style="width: 17px; height: 17px"><label for="droit">Droit</label>
 								</div>
 							</td>
 							<td  style="border-right: 2px #000000 solid;"></td>
@@ -118,7 +131,7 @@
 						<tr height="30px">
 							<td></td>
 							<td>
-								<input type="checkbox" id="50mm" name="50mm" style="width: 17px; height: 17px"> <label>50 mm</label>
+								<input type="checkbox" id="couvre_joint" name="couvre_joint" value="50" style="width: 17px; height: 17px"> <label>50 mm</label>
 							</td>
 							<td style="border-right: 2px #000000 solid;"></td>
 							
@@ -132,7 +145,7 @@
 						<tr height="30px">
 							<td></td>
 							<td>
-								<input type="checkbox" id="SsCJ" name="SsCJ" style="width: 17px; height: 17px"> <label>Sans Couvre Joint</label>
+								<input type="checkbox" id="couvre_joint" name="couvre_joint" value="Sans Couvre Joint" style="width: 17px; height: 17px"> <label>Sans Couvre Joint</label>
 							</td>
 							<td  style="border-right: 2px #000000 solid;"></td>
 							
@@ -485,10 +498,8 @@
 				            </tr>
 				        </table>
 		    		</footer>
-		    	<div class="noImpr">
-			        <p align="center"><input type="submit" value="Enregistrer" nClick="window.print()"></p>   
-			        <p align="center"><button><a href="file:///C:/Prise%20de%20cote/Home.html">Nouvelle Prise de Cote</a></button></p>
-			    </div>
+		    		<p align="center"><a href="Coul2_pdf.php">save</a></button></p>
+				<input type="submit" value="Suivant">
 				</div>
 			</form>
 			<script>

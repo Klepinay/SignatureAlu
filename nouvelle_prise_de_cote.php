@@ -1,9 +1,14 @@
 	<?php 
-		$commercial = $_GET['commercial'];
-		$technicien = $_GET['technicien'];
-		$client = $_GET['client'];
-		$ral = $_GET['ral'];
-		$date = $_GET['date'];
+	$numero = $_GET['numero'];
+	$technicien = $_GET['technicien'];
+	$date = $_GET['date'];
+	$Nchantier = $_GET['Nchantier'];
+	$client = $_GET['client'];
+	$adresse = $_GET['adresse'];
+	$tel = $_GET['tel'];
+	$commercial = $_GET['commercial'];
+	$Nbrsmenuiserie = $_GET['Nbrsmenuiserie'];
+	$ral = $_GET['ral'];
 	?>
 <!DOCTYPE html>
 <html>
@@ -14,26 +19,50 @@
 	</head>
 	
 	<body>
-		<header>
-			<image src="images\LOGO-SIGNATURE-ALU-OK-8X4.jpg" width="49%" name="logo" id="logo"></image>
-			 <div id="info" style="border: 1px solid black">
-				<h1 align="center">Informations</h1>
-				<p>Client : <?php echo $_GET['client'] ?></p>
-				<p>Technicien : <?php echo $_GET['technicien'] ?></p>
-				<p>Date : <?php echo $_GET['date'] ?></p>
-				<p>Ral : <?php echo $_GET['ral'] ?></p>
-				<p>Date : <?php echo $_GET['date'] ?></p>
+		<header >
+			<image src="images\LOGO-SIGNATURE-ALU-OK-8X4.jpg" width="49%" name="logo" id="logo" ></image>
+			 <div id="info" style="border-left: 1px solid black">
+			 <h1 align="center" style="margin-bottom: 50px;">Informations</h1>
+				<b style="margin-left:50px;">N° : </b>
+				<?php echo $numero ?><br /><br />
+				
+				<b style="margin-left:50px;">Date : </b>
+				<?php echo $date ?>
+				
+				<b style="margin-left : 120px;">N° de chantier : </b>
+				<?php echo $Nchantier ?><br /><br />
+				
+				<b style="margin-left:50px;">Client : </b>
+				<?php echo $client ?><br /><br />
+				
+				<b style="margin-left:50px;">Adresse du chantier : </b>
+				<?php echo $adresse ?><br /><br />
+				
+				<b style="margin-left:50px;">Tel : </b>
+				<?php echo $tel ?> <br /><br />
+				
+				<b style="margin-left:50px;">Commercial : </b>
+				<?php echo $commercial ?>
+				
+				<b style="margin-left:50px;">Technicien : </b>
+				<?php echo $technicien ?><br /><br />
+				
+				<b style="margin-left:50px;">Nbrs de Menuiserie : </b>
+				<?php echo $Nbrsmenuiserie ?>
+				
+				<b style="margin-left:65px;">R A L : </b>
+				<?php echo $ral ?><br/><br />
 			</div>
 		</header>
 
 		<!--Tableau des catégories primaire-->
-		<table width="100%" border="1">
+		<table width="100%" border="1" style="border-top: 1px solid black">
 			<tr>
 				<td width="50%">
 					<table width="50%" border="0">
 						<tr>
 							<td align="center">
-								<a href="/Signature/MENUISERIE\BS TOLE DIVERS 2020\divers.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">Divers</button></a>
+								<a href="/Signature/MENUISERIE\BS TOLE DIVERS 2020\divers.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">Divers</button></a>
 							</td>
 							<td align="center">
 								<button class="button" type="button" id="Coul">Coulissant Vtx</button>
@@ -48,16 +77,16 @@
 								<button class="button" type="button" id="GardeCorps">Garde Corps</button>
 							</td>
 							<td align="center">
-								<a href="\Signature\MENUISERIE\Hublot 2020\Hublot 2020.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button" id="Hublot">Hublot</button></a>
+								<a href="\Signature\MENUISERIE\Hublot 2020\Hublot 2020.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button" id="Hublot">Hublot</button></a>
 							</td>
 							<td align="center">
-								<a href="\Signature\MENUISERIE\Jalousie\Jalousie.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button" id="Jalousie">Jalousie</button></a>
+								<a href="\Signature\MENUISERIE\Jalousie\Jalousie.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button" id="Jalousie">Jalousie</button></a>
 							</td>
 							<td align="center">
 								<button class="button" type="button" id="VB">Volet Battant</button>
 							</td>
 							<td align="center">
-								<a href="\Signature\MENUISERIE\Volet Roulant\Volet Roulant2.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button" id="VR">Volet Roulant</button></a>
+								<a href="\Signature\MENUISERIE\Volet Roulant\Volet Roulant2.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button" id="VR">Volet Roulant</button></a>
 							</td>
 						</tr>
 					</table>
@@ -67,22 +96,22 @@
 						<table width="50%" border="0" >
 							<tr align="center">
 								<td>
-									<a href="\Signature\MENUISERIE\Coulissant\Coul 2Vtx.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">2 Vtx</button></a>
+									<a href="\Signature\MENUISERIE\Coulissant\Coul 2Vtx.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo$ral ?>"><button class="button" type="button">2 Vtx</button></a>
 								</td>
 								<td>
-									<a href="\Signature\MENUISERIE\Coulissant\Coul 3Vtx.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">3 Vtx</button></a>
+									<a href="\Signature\MENUISERIE\Coulissant\Coul 3Vtx.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">3 Vtx</button></a>
 								</td>
 								<td>
-									<a href="\Signature\MENUISERIE\Coulissant\Coul 4Vtx 2 Rails.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">4 Vtx 2 Rails</button></a>
+									<a href="\Signature\MENUISERIE\Coulissant\Coul 4Vtx 2 Rails.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">4 Vtx 2 Rails</button></a>
 								</td>
 								<td>
-									<a href="\Signature\MENUISERIE\Coulissant\Coul 4Vtx 4 Rails.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">4 Vtx 4 Rails</button></a>
+									<a href="\Signature\MENUISERIE\Coulissant\Coul 4Vtx 4 Rails.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">4 Vtx 4 Rails</button></a>
 								</td>
 								<td>
-									<a href="\Signature\MENUISERIE\Coulissant\Coul 6Vtx.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">6 Vtx</button></a>
+									<a href="\Signature\MENUISERIE\Coulissant\Coul 6Vtx.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">6 Vtx</button></a>
 								</td>
 								<td>
-									<a href="\Signature\MENUISERIE\Coulissant\Coulissant d'angle 2020.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">Angle</button></a>
+									<a href="\Signature\MENUISERIE\Coulissant\Coulissant d'angle 2020.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">Angle</button></a>
 								</td>
 							</tr>
 							
@@ -112,13 +141,13 @@
 							<table width="50%" border="0" >
 								<tr align="center">
 									<td>
-										<a href="\Signature\MENUISERIE\Frappe\Fixe et compose\Ensemble compose.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">Ensemble composé</button></a>
+										<a href="\Signature\MENUISERIE\Frappe\Fixe et compose\Ensemble compose.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">Ensemble composé</button></a>
 									</td>
 									<td>
-										<a href="\Signature\MENUISERIE\Frappe\Fixe et compose\Fixe angle2020.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">Fixe angle</button></a>
+										<a href="\Signature\MENUISERIE\Frappe\Fixe et compose\Fixe angle2020.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">Fixe angle</button></a>
 									</td>
 									<td>
-										<a href="\Signature\MENUISERIE\Frappe\Fixe et compose\fixe.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">Fixe</button></a>
+										<a href="\Signature\MENUISERIE\Frappe\Fixe et compose\fixe.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">Fixe</button></a>
 									</td>
 								</tr>
 								
@@ -130,19 +159,19 @@
 							<table width="50%" border="0" >
 								<tr align="center">
 									<td>
-										<a href="\Signature\MENUISERIE\Frappe\FoF Souf Osci Proj\Fof 2 Vtx.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">Fof 2 Vtx</button></a>
+										<a href="\Signature\MENUISERIE\Frappe\FoF Souf Osci Proj\Fof 2 Vtx.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">Fof 2 Vtx</button></a>
 									</td>
 									<td>
-										<a href="\Signature\MENUISERIE\Frappe\FoF Souf Osci Proj\FoF1 Vtx.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">Fof 1 Vtx</button></a>
+										<a href="\Signature\MENUISERIE\Frappe\FoF Souf Osci Proj\FoF1 Vtx.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">Fof 1 Vtx</button></a>
 									</td>
 									<td>
-										<a href="\Signature\MENUISERIE\Frappe\FoF Souf Osci Proj\Oscillot.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">Oscillot</button></a>
+										<a href="\Signature\MENUISERIE\Frappe\FoF Souf Osci Proj\Oscillot.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">Oscillot</button></a>
 									</td>
 									<td>
-										<a href="\Signature\MENUISERIE\Frappe\FoF Souf Osci Proj\Projetant 17.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">Projetant 17</button></a>
+										<a href="\Signature\MENUISERIE\Frappe\FoF Souf Osci Proj\Projetant 17.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">Projetant 17</button></a>
 									</td>
 									<td>
-										<a href="\Signature\MENUISERIE\Frappe\FoF Souf Osci Proj\Soufflet.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">Soufflet</button></a>
+										<a href="\Signature\MENUISERIE\Frappe\FoF Souf Osci Proj\Soufflet.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">Soufflet</button></a>
 									</td>
 								</tr>
 								
@@ -154,13 +183,13 @@
 							<table width="50%" border="0" >
 								<tr align="center">
 									<td>
-										<a href="\Signature\MENUISERIE\Frappe\Portes\Porte 1 Vt.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">Porte 1 Vtx</button></a>
+										<a href="\Signature\MENUISERIE\Frappe\Portes\Porte 1 Vt.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">Porte 1 Vtx</button></a>
 									</td>
 									<td>
-										<a href="\Signature\MENUISERIE\Frappe\Portes\Porte 2 Vtx.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">Portes 2 Vtx</button></a>
+										<a href="\Signature\MENUISERIE\Frappe\Portes\Porte 2 Vtx.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">Portes 2 Vtx</button></a>
 									</td>
 									<td>
-										<a href="\Signature\MENUISERIE\Frappe\Portes\Porte Tierce 2 Vtx.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">Porte Tierce 2 Vtx</button></a>
+										<a href="\Signature\MENUISERIE\Frappe\Portes\Porte Tierce 2 Vtx.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">Porte Tierce 2 Vtx</button></a>
 									</td>
 								</tr>
 								
@@ -172,19 +201,19 @@
 						<table width="50%" border="0" >
 							<tr align="center">
 								<td>
-									<a href="\Signature\MENUISERIE\Galandage - Gal angle 2020\Gal 1 Rail.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">Gal 1 Rail</button></a>
+									<a href="\Signature\MENUISERIE\Galandage - Gal angle 2020\Gal 1 Rail.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">Gal 1 Rail</button></a>
 								</td>
 								<td>
-									<a href="\Signature\MENUISERIE\Galandage - Gal angle 2020\Gal 2 Rail.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">Gal 2 Rails</button></a>
+									<a href="\Signature\MENUISERIE\Galandage - Gal angle 2020\Gal 2 Rail.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">Gal 2 Rails</button></a>
 								</td>
 								<td>
-									<a href="\Signature\MENUISERIE\Galandage - Gal angle 2020\Gal 3 Rails.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">Gal 3 Rails</button></a>
+									<a href="\Signature\MENUISERIE\Galandage - Gal angle 2020\Gal 3 Rails.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">Gal 3 Rails</button></a>
 								</td>
 								<td>
-									<a href="\Signature\MENUISERIE\Galandage - Gal angle 2020\Gal 4 Rails.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">Gal 4 Rails</button></a>
+									<a href="\Signature\MENUISERIE\Galandage - Gal angle 2020\Gal 4 Rails.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">Gal 4 Rails</button></a>
 								</td>
 								<td>
-									<a href="\Signature\MENUISERIE\Galandage - Gal angle 2020\Galandage D'angle.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">Galandage d'angle</button></a>
+									<a href="\Signature\MENUISERIE\Galandage - Gal angle 2020\Galandage D'angle.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">Galandage d'angle</button></a>
 								</td>
 							</tr>
 							
@@ -196,31 +225,31 @@
 						<table width="50%" border="0" >
 							<tr align="center">
 								<td>
-									<a href="\Signature\MENUISERIE\Garde Corps 2020\G C Droit Barreaude 2020.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">GC Droit Barreaudé</button></a>
+									<a href="\Signature\MENUISERIE\Garde Corps 2020\G C Droit Barreaude 2020.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">GC Droit Barreaudé</button></a>
 								</td>
 								<td>
-									<a href="\Signature\MENUISERIE\Garde Corps 2020\G C Droit Vitre JMD 2020.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">GC Droit Vitré JMD</button></a>
+									<a href="\Signature\MENUISERIE\Garde Corps 2020\G C Droit Vitre JMD 2020.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">GC Droit Vitré JMD</button></a>
 								</td>
 								<td>
-									<a href="\Signature\MENUISERIE\Garde Corps 2020\G C Droit Vitre PS 2020.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">GC Droit Vitré PS</button></a>
+									<a href="\Signature\MENUISERIE\Garde Corps 2020\G C Droit Vitre PS 2020.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">GC Droit Vitré PS</button></a>
 								</td>
 								<td>
-									<a href="\Signature\MENUISERIE\Garde Corps 2020\G C Rampant Barreaude 2020.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">GC Rampant Barreaudé</button></a>
+									<a href="\Signature\MENUISERIE\Garde Corps 2020\G C Rampant Barreaude 2020.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">GC Rampant Barreaudé</button></a>
 								</td>
 								<td>
-									<a href="\Signature\MENUISERIE\Garde Corps 2020\G C Rampant Vitre JMD 2020.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">GC Rampant Vitré JMD</button></a>
+									<a href="\Signature\MENUISERIE\Garde Corps 2020\G C Rampant Vitre JMD 2020.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">GC Rampant Vitré JMD</button></a>
 								</td>
 								<td>
-									<a href="\Signature\MENUISERIE\Garde Corps 2020\G C Rampant Vitre PS 2020.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">GC Rampant Vitré PS</button></a>
+									<a href="\Signature\MENUISERIE\Garde Corps 2020\G C Rampant Vitre PS 2020.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">GC Rampant Vitré PS</button></a>
 								</td>
 								<td>
-									<a href="\Signature\MENUISERIE\Garde Corps 2020\GRILLE de Protection 2020.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">GRILLE de protection</button></a>
+									<a href="\Signature\MENUISERIE\Garde Corps 2020\GRILLE de Protection 2020.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">GRILLE de protection</button></a>
 								</td>
 								<td>
-									<a href="\Signature\MENUISERIE\Garde Corps 2020\MC sur Muret.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">MC sur Muret</button></a>
+									<a href="\Signature\MENUISERIE\Garde Corps 2020\MC sur Muret.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">MC sur Muret</button></a>
 								</td>
 								<td>
-									<a href="\Signature\MENUISERIE\Garde Corps 2020\Portillon.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">Portillon</button></a>
+									<a href="\Signature\MENUISERIE\Garde Corps 2020\Portillon.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">Portillon</button></a>
 								</td>
 							</tr>
 							
@@ -232,10 +261,10 @@
 						<table width="50%" border="0" >
 							<tr align="center">
 								<td>
-									<a href="\Signature\MENUISERIE\Volet Battant\Volet Battant 1 Vtl.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">Volet Battant 1 Vtl</button></a>
+									<a href="\Signature\MENUISERIE\Volet Battant\Volet Battant 1 Vtl.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">Volet Battant 1 Vtl</button></a>
 								</td>
 								<td>
-									<a href="\Signature\MENUISERIE\Volet Battant\Volet Battant 2Vtx.php?commercial=<?php echo $commercial ?>&client=<?php echo $client ?>&ral=<?php echo $ral ?>&date=<?php echo $date ?>&technicien=<?php echo $technicien ?>"><button class="button" type="button">Volet Battant 2 Vtx</button></a>
+									<a href="\Signature\MENUISERIE\Volet Battant\Volet Battant 2Vtx.php?technicien=<?php echo $technicien?>&numero=<?php echo$numero?>&date=<?php echo$date?>&Nchantier=<?php echo$Nchantier?>&client=<?php echo$client?>&adresse=<?php echo$adresse?>&tel=<?php echo$tel?>&commercial=<?php echo$commercial?>&Nbrsmenuiserie=<?php echo$Nbrsmenuiserie?>&ral=<?php echo $ral ?>"><button class="button" type="button">Volet Battant 2 Vtx</button></a>
 								</td>
 							</tr>
 						</table>
